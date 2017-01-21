@@ -1,5 +1,6 @@
 import numpy as np
-# parse affinity analysis files
+# parse affinity analysis file
+#
 def parseWares(fileName):
     uniqdata = []
     with open(fileName,'r') as f:
@@ -11,6 +12,3 @@ def parseWares(fileName):
                 j = uniqdata.index(elem)
                 darray[i,j]=1
     return uniqdata,darray
-a,b=parseWares("text")
-print(a)
-print(b)
